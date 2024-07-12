@@ -1,0 +1,118 @@
+
+# Estimate nonprofit & government sector first
+
+40M 120M
+/ 70K 200K
+=. op_ppl
+
+40M 60M
+/ 70K 200K
+=. sff_ppl
+
+1M 30M
+/ 50K 150K
+=. fli_ppl
+
+3M 7M
+/ 50K 150K
+=. ltff_ppl
+
+2M 15M
+/ 50K 150K
+=. longview_ppl
+
+1M 3M
+/ 30K 200K
+=. manifund_ppl
+
+5M 40M
+/ 60K 200K
+=. small_funders_ppl
+
+5M 40M
+/ 60K 100K
+=. individual_funders_ppl
+
+5M
+/ 40K 150K
+=. nsf_ppl
+
+2M 10.8M
+/ 40K 100K
+=. dsit_ppl
+
+5M 35M
+/ 40K 150K
+=. aria_ppl
+
+10M
+/ 40K 150K
+=. fmf_ppl
+
+10M 50M
+/ 40K 90K
+=. fmtf_ppl
+
+20M 50.3M
+/ 20K 70K
+=. eu_ppl
+
+5M 50M
+/ 30K 150K
+=. canada_ppl
+
+100K 2M
+/ 20K 100K
+=. singapore_ppl
+
+1M 10M
+/ 30K 100K
+=. other_aisi_ppl
+
+op_ppl
++ sff_ppl
++ fli_ppl
++ ltff_ppl
++ longview_ppl
++ manifund_ppl
++ small_funders_ppl
++ individual_funders_ppl
++ nsf_ppl
++ dsit_ppl
++ aria_ppl
++ fmf_ppl
++ fmtf_ppl
++ eu_ppl
++ canada_ppl
++ singapore_ppl
++ other_aisi_ppl
+=. initial_nonprofit_and_govs_ppl
+
+op_ppl
+/ initial_nonprofit_and_govs_ppl
+=. share_op
+
+initial_nonprofit_and_govs_ppl
+* beta 4 6   # salaries as share of total funding
+* 0.6 1.5     # add additional uncertainty
+=. nonprofit_and_govs
+
+# Estimate share of labs separately
+10 80         # Anthropic 
++ 5 100       # Google Deepmind
++ 5 50        # OpenAI
+=. lab_ppl
+
+# Estimate contribution from academia separately
+7379          # Number of authors who published in the stats.ML category on arxiv in 2023
+/ beta 4 96   # fraction arxiv authors are of the field
+* beta 1 32    # fraction of their research that is safety relevant. Really important!!
+* beta 1 2    # adjustment because they are from academia
+=. academia_ppl
+
+# Add all three categories up
+nonprofit_and_govs
++ lab_ppl
++ academia_ppl
+
+exit

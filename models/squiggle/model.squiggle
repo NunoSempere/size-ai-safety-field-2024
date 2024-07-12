@@ -1,0 +1,53 @@
+op_ppl = (40M to 120M) / (70k to 200k)
+sff_ppl = (40M to 60M) / (70k to 200k)
+fli_ppl = (1M to 30M) / (50k to 150k)
+ltff_ppl = (3M to 7M) / (50k to 150k)
+longview_ppl = (2M to 15M) / (50k to 150k)
+manifund_ppl = (1M to 3M) / (30k to 200k)
+small_funders_ppl = (5M to 40M) / (60k to 200k)
+individual_funders_ppl = (5M to 40M) / (60k to 100k)
+nsf_ppl = 5M / (40k to 150k)
+dsit_ppl = (2M to 10.8M) / (40k to 100k)
+aria_ppl = (20M to 64M) / (40k to 150k)
+fmf_ppl = 10M / (40k to 150k)
+fmtf_ppl = (10M to 50M) / (40k to 90k)
+eu_ppl = 50.3M / (20k to 70k)
+canada_ppl = (5M to 50M) / (30k to 150k)
+singapore_ppl = (100k to 2M) / (20k to 100k)
+other_aisi_ppl = (1M to 10M) / (30k to 100k)
+
+initial_ppl = op_ppl + sff_ppl + fli_ppl + ltff_ppl + longview_ppl +
+  manifund_ppl +
+  small_funders_ppl +
+  individual_funders_ppl +
+  nsf_ppl +
+  dsit_ppl +
+  aria_ppl +
+  fmf_ppl +
+  fmtf_ppl +
+  eu_ppl +
+  canada_ppl +
+  singapore_ppl +
+  other_aisi_ppl
+
+nonprofit_and_govs = initial_ppl *
+  beta(4, 6) * // salaries as share of total funding
+  (0.6 to 1.5) // add additional uncertainty
+
+// Estimate share of labs separately
+lab_ppl = (10 to 80) + // Anthropic
+  (5 to 100) + // Google Deepmind
+  (5 to 50) // OpenAI
+
+// Estimate contribution from academia separately
+academia_ppl = (7379 / beta(4, 96)) *  // Number of authors who published in the stats.ML category on arxiv in 2023    // fraction arxiv authors are of the field
+  beta(1, 32) * // fraction of their research that is safety relevant. Really important!!
+  beta(1, 2) // adjustment because they are from academia
+
+// Add all three categories up
+total = {
+  total_without_academia: nonprofit_and_govs + lab_ppl ,
+  total_with_academia: nonprofit_and_govs + lab_ppl + academia_ppl
+} 
+
+total

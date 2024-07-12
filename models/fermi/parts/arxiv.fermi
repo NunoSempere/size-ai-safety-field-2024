@@ -1,0 +1,4 @@
+7379          # Number of authors who published in the stats.ML category on arxiv in 2023
+/ beta 4 96  # fraction arxiv authors are of the field
+* beta 1 32   # fraction of their research that is safety relevant
+* beta 1 2    # adjustment because they are from academia

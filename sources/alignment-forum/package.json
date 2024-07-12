@@ -1,0 +1,17 @@
+{
+  "name": "lweaforumgraphql",
+  "version": "1.0.0",
+  "description": "Fetches all posts from the EA forum",
+  "main": "fetchAllForumPosts.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "author": "Nuño Sempere",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "fs": "^0.0.1-security"
+  }
+}

@@ -1,0 +1,6 @@
+Factor	Figure	Notes	
+Number of authors who published in the stats.ML category on arxiv in 2023	7379	Extracted through the arxiv API	
+Fraction arxiv authors are of the field	beta 4 96	~4%	These two factors are crucial
+Fraction of their research that is safety relevant	beta 1 32	~3%	
+Adjustment because they are from academia	beta 1 2	~30%	
+Estimated contribution from academia	31.4 9.5K	Compare with 11 to 3.5k, in 2020—four years ago: https://forum.effectivealtruism.org/posts/8ErtxW7FRPGMtDqJy/the-academic-contribution-to-ai-safety-seems-large	

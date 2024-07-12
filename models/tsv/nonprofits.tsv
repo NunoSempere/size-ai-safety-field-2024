@@ -1,0 +1,26 @@
+Category	Source	Estimated yearly amount (M)	Estimated average salary (K)	Implied estimate for the number of people if all funding went to salaries	Source
+Effective altruism & adjacent orgs	Open Philanthropy	40M to 120M	70K to 200K	273.9 to 1.3K	Eyeballing from parsing data from https://www.openphilanthropy.org/grants/?q=&focus-area%5B%5D=potential-risks-advanced-ai, also partially https://www.openphilanthropy.org/grants/?q=&focus-area%5B%5D=global-catastrophic-risks-capacity-building
+	Jan Tallin (SFF, Lightcone)	40M to 60M	70K to 200K	235.9 to 726.8	https://jaan.online/philanthropy/; https://coinmarketcap.com/currencies/ethereum/ 
+	FLI	1M to 30M	50K to 150K	10.6 to 377.7	They received what was at the time 600M worth of Ethereum from Vitalik Buterin. After various discounting factors, this could be 300M. Distributed over 10 years this could be 30M per year. However, they don´t have the capacity
+	LTFF	3M to 7M	50K to 150K	26.4 to 105.9	Per https://funds.effectivealtruism.org/funds/far-future#payout-stats , they gave 5.6M in 2023. They seem likely to give out less money in 2024.
+	Longview	2M to 15M	50K to 150K	20.1 to 199.2	Judgmental estimate
+	Manifund	500K to 3M	30K to 200K	7.5 to 66.9	Judgmental estimate
+	Smaller funders	5M 40M	60K to 200K	38.8 to 429.2	Judgmental estimate
+	Individuals	5M 40M	60K to 100K	62.6 to 532.6	Judgmental estimate
+Mainstream foundations					
+Governments	NSF	5M	40K to 150K	33.3 to 125.0	https://www.lesswrong.com/posts/jwe6jpubuMiuSRqff/usd20-million-in-nsf-grants-for-safety-research
+	DSIT AI Safety fund	2M to 10.8M	40K to 100K	28.1 to 191.8	https://www.gov.uk/government/news/tech-secretary-unveils-85-million-research-funding-set-to-break-new-grounds-in-ai-safety-testing  https://www.aisi.gov.uk/about Announced 8.5M GBP, but under the now gone conservative government
+	ARIA	5M to 35M	40K to 150K	52.7 to 553.7	https://www.newscientist.com/article/2391383-can-the-uks-new-aria-science-agency-deliver-moonshot-technologies/  Eight scientists, of which one is David Darymple, each with a 50M GBP budget. On the one hand, you might have more than him. On the other hand, they might take time to ramp up. Note the conversion from pounds to dollars.
+	Frontier Model Forum	10M	40K to 150K	66.7 to 250.0	https://aisfund.org/who-we-are/ 
+	Foundation Model Taskforce	10M to 50M	40K to 90K	151.4 to 917.6	https://www.gov.uk/government/news/tech-entrepreneur-ian-hogarth-to-lead-uks-ai-foundation-model-taskforce
+	EU AI office	20M 50.3M	20K to 70K	389.4 to 1.8K	https://www.politico.eu/article/eu-needs-oppenheimer-to-run-ai-policy-key-lawmaker-tudorache-romania-says/ "the AI Office’s starting budget will be €46.5 million" ($50.3M), but unclear over what length of time, unclear whether they'll be able to hire it fast.
+	Canada AISI	5M to 50M	30K to 150K	57.9 to 960.3	https://www.cigionline.org/articles/a-welcome-voice-for-canada-on-the-future-of-ai/ 50M budget, but unclear over how long
+	Singapore AISI	100K to 2M	20K to 100K	1.8 to 54.8	https://www.imda.gov.sg/resources/press-releases-factsheets-and-speeches/factsheets/2024/digital-trust-centre 
+	Other AI safety institutes	1M to 10M	30K to 100K	15.7 to 211.7	https://aisi.go.jp | https://aisi-go-jp.translate.goog/?_x_tr_sl=de&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp
+					
+Implied estimate for the total number of people if all funding went to salaries	3.0K 5.6K 				
+Share Open Philanthropy is of the estimated total number of people	0.06 0.3 	Difference between share of people and share of funding is because Open Philanthropy's grantees are paid better than the field as a whole			
+Share Open Philanthropy is of the estimated total funding	0.1 0.4				
+Adjustment for under or overcounting total funding 	0.6 to 1.5	A reason for why it might be too much: Some commitments might not be fulfilled, or not fulfilled as fast. A reason for why it might be too little: Funding sources might be missing			
+Salaries a a share of funding 	beta 4 6	~40%			
+Final estimate of people from nonprofit and gobernment sectors	547.7 3.2K 				
