@@ -2,7 +2,7 @@
 
 # Filenames
 INPUT=index.md
-OUTPUT=estimate-ais-community-size.pdf
+OUTPUT=index.pdf
 
 # Config options
 PDF_ENGINE=--pdf-engine=xelatex
